@@ -1,0 +1,8 @@
+name: QoolReport
+version: 1.0-SNAPSNOT
+author: GoodestEnglish
+main: me.GoodestEnglish.QoolReport.QoolReport
+depend:  [MitwNick, LiteBans, QoolDiscordCore]
+commands:
+  report:
+  getchatlogs:

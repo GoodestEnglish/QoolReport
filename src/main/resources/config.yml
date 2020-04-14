@@ -1,0 +1,7 @@
+discord:
+  token-bot: Token
+  channel-id: ChannelID
+pastebin:
+  api-key: key
+  username: user
+  password: password
