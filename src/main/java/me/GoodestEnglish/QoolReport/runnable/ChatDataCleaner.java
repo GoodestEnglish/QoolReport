@@ -5,8 +5,6 @@ import me.GoodestEnglish.QoolReport.manager.ReportData;
 import me.GoodestEnglish.QoolReport.util.Log;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.*;
-
 public class ChatDataCleaner {
 
     public ChatDataCleaner() {
@@ -21,17 +19,9 @@ public class ChatDataCleaner {
                 long startTime = System.currentTimeMillis();
                 for (ReportData data : ReportData.getData().values()) {
                     data.getChatMessage().keySet().removeIf(time -> System.currentTimeMillis() - time > 1000 * 60 * 5);
-                    /*List<Long> list = new ArrayList<>();
-                    for (Iterator<Long> it = data.getChatMessage().keySet().iterator(); it.hasNext(); ) {
-                        Long time = it.next();
-                        //long 1000 ticks = 1 second
-                        if (System.currentTimeMillis() - time > 1000 * 60 * 5) {
-                            list.add(time);
-                            logs++;
-                        }
-                    }*/
                 }
                 long finishTime = System.currentTimeMillis();
+
                 Log.show(Log.LogLevel.LOW, "[QoolReport] 成功清除超過五分鐘的聊天室說話紀錄 (耗費 " + (finishTime - startTime) + "ms)");
             }
         }.runTaskTimerAsynchronously(QoolReport.get(), 20L * 60, 20L * 60);

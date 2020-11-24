@@ -1,6 +1,5 @@
 package me.GoodestEnglish.QoolReport.command;
 
-import me.GoodestEnglish.QoolNick.QoolNickAPI;
 import me.GoodestEnglish.QoolReport.manager.ReportData;
 import me.GoodestEnglish.QoolReport.menu.ReportMenu;
 import me.GoodestEnglish.QoolReport.util.CC;
@@ -41,9 +40,6 @@ public class ReportCommand implements CommandExecutor {
         if (target == null) {
             player.sendMessage(CC.RED + "玩家不存在!");
             return false;
-        }
-        if (QoolNickAPI.isNicked(target)) {
-            Log.debug(player, "Target " + target.getName() + " is nicked.");
         }
 
         player.sendMessage(CC.RED + "*請注意: 請不要胡亂舉報他人, 胡亂舉報他人將會受到懲罰");

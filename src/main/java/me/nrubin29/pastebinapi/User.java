@@ -14,7 +14,7 @@ public class User {
     private String email, location;
     private AccountType type;
 
-    protected User(PastebinAPI api, String username, String password) throws PastebinException {
+    protected User(PastebinAPI api, String username, String password) {
         this.api = api;
         this.username = username;
         this.password = password;

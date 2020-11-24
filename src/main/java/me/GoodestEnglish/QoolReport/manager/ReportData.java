@@ -45,7 +45,6 @@ public class ReportData {
 
     public void addChatMessage(String msg) {
         chatMessage.put(System.currentTimeMillis(), msg);
-
     }
 
 }

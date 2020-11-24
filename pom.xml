@@ -51,12 +51,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>me.GoodestEnglish</groupId>
-            <artifactId>QoolNick</artifactId>
-            <version>1.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.16</version>
@@ -69,16 +63,10 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>me.GoodestEnglish</groupId>
-            <artifactId>QoolDiscordCore</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>litebans</groupId>
-            <artifactId>api</artifactId>
-            <version>0.3.1</version>
-            <scope>provided</scope>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>4.2.0_168-withDependencies</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

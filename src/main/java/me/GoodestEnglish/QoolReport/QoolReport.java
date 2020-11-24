@@ -36,11 +36,12 @@ public class QoolReport extends JavaPlugin {
         getCommand("report").setExecutor(new ReportCommand());
         getCommand("getchatlogs").setExecutor(new PasteChatLogCommand());
 
-        getServer().getPluginManager().registerEvents(new ButtonListener(), this);
         getServer().getPluginManager().registerEvents(new ChatListener(), this);
+        getServer().getPluginManager().registerEvents(new ButtonListener(), this);
+
+        getServer().getScheduler().runTaskTimerAsynchronously(this, new MenuUpdateTask(), 20L, 20L);
 
         new ChatDataCleaner();
-        Bukkit.getScheduler().runTaskTimerAsynchronously(this, new MenuUpdateTask(), 20L, 20L);
     }
 
     public static QoolReport get() {
