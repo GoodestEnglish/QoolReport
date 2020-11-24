@@ -13,6 +13,7 @@ https://discord.gg/GKsPEqadtz
 
 ## Credits 歸功
 * [PastebinAPI](https://github.com/nrubin29/PastebinAPI) - 提供讓伺服器把資料傳送到Pastebin 的方法
+* [JDA](https://github.com/DV8FromTheWorld/JDA) - Discord 機械人 API 
 
 ## License 許可
 QoolReport 正在使用 MIT License
